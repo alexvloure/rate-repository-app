@@ -1,8 +1,8 @@
 # Rate repositories
 Simple React Native app example
 
-# Frontend
+## Frontend
 Built with React Native
 
-# Backend
+## Backend
 Used this backend https://github.com/Kaltsoon/rate-repository-api to get the data.
