@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import StyledText from './StyledText';
 import RepositoryStats from './RepositoryStats';
-import { RepositoryItemProps } from '../types/repositoryModel';
+import { Repository } from '../types/repositoryModel';
 import theme from '../theme';
 
 const styles = StyleSheet.create({
@@ -31,7 +31,7 @@ const RepositoryItemHeader = ({
   fullName,
   description,
   language,
-}: RepositoryItemProps) => (
+}: Repository) => (
   <View
     style={{
       flexDirection: 'row',
@@ -48,7 +48,7 @@ const RepositoryItemHeader = ({
   </View>
 );
 
-const RepositoryItem = (repo: RepositoryItemProps) => (
+const RepositoryItem = (repo: Repository) => (
   <View key={repo.id} style={styles.container}>
     <RepositoryItemHeader {...repo} />
     <RepositoryStats {...repo} />

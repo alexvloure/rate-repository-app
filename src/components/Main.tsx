@@ -1,8 +1,9 @@
 import React from 'react';
-import { Switch, Text, View } from 'react-native';
+import { View } from 'react-native';
 import RepositoryList from './RepositoryList';
 import AppBar from './AppBar';
 import { Route, Routes } from 'react-router-native';
+import LogInPage from '../pages/Login';
 
 const Main = () => {
   return (
@@ -10,7 +11,7 @@ const Main = () => {
       <AppBar />
       <Routes>
         <Route path="/" element={<RepositoryList />} />
-        <Route path="/signin" element={<Text>Working on it</Text>} />
+        <Route path="/signin" element={<LogInPage />} />
       </Routes>
     </View>
   );

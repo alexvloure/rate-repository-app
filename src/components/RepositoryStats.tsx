@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import StyledText from './StyledText';
 import theme from '../theme';
 import { FontWeightType } from '../types';
-import { RepositoryItemProps } from '../types/repositoryModel';
+import { Repository } from '../types/repositoryModel';
 
 const styles = StyleSheet.create({
   flexRow: {
@@ -23,7 +23,7 @@ const RepositoryStats = ({
   forksCount,
   reviewCount,
   ratingAverage,
-}: RepositoryItemProps) => {
+}: Repository) => {
   const statViewStyles = [styles.flexRow, styles.justifySpaceAround];
   return (
     <View style={statViewStyles}>
